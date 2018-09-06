@@ -48,7 +48,6 @@ class September6_
       
       //output total
       System.out.println("The sum is " + total);
-      */
       
       int num1 = 19;
       int num2 = 7;
@@ -62,7 +61,22 @@ class September6_
       System.out.println( "The difference is " + difference );
       System.out.println( "The product is " + product );
       System.out.println( "The remainder is " + remainder );
+      */
       
+      /*
+      int x = 3;
+      double y = x;
+      
+      //implicit cast:
+      System.out.println( "y is " + y );
+      */
+      
+      double y = 4.5;
+      int x = (int)y;
+      
+      System.out.println( "x is " + x );
+
+   
       
    }
    
