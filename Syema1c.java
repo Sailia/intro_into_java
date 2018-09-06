@@ -7,7 +7,7 @@ class Syema1c
       System.out.println("a   a^2   a^3");
       System.out.println( a + "   " + a * a + "     " +  a * a * a );
       System.out.println( ++a + "   " + a * a + "     " +  a * a * a );
-      System.out.println( ++a + "   " + + a * a + "     " +  a * a * a );
+      System.out.println( ++a + "   " + a * a + "     " +  a * a * a );
    }
 
 }
