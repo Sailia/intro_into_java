@@ -1,4 +1,5 @@
 //selection structures: like stairways and hallways
+//only statements have semicolons 
 public class Selections
 {
    public static void main( String[] args)
