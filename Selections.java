@@ -1,6 +1,6 @@
 //selection structures: like stairways and hallways
 //only statements have semicolons 
-public class Selections
+public class Selections1
 {
    public static void main( String[] args)
    {
