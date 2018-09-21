@@ -22,7 +22,7 @@ public class Syema2a
       radius = input.nextDouble();
       
       //The volume of a sphere is 4 / 3 * pi * radius ^ 3
-      double volume = division_converted_to_double * pi * radius * radius * radius;
+      double volume = (double)division_converted_to_double * pi * radius * radius * radius;
       
       //output the calculated volume 
       System.out.println("With a radius of " + radius + " the volume is: " + volume);
