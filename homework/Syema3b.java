@@ -24,6 +24,10 @@ public class Syema3b
     System.out.println("Please enter a four digit integer: ");
     int number = input.nextInt(); 
     
+    // 1 2 6 3 = (1*1000) + (2*100) + (6 * 10) + 3
+    // 1 2 6 3 = 1 2 6 3 % 1000 = remainder 263
+    // 263 = (2 * 100) + 
+    
     int first_digit = (number / 1) % 10;
     int second_digit = (number / 10) % 10;
     int third_digit = (number / 100) % 10;

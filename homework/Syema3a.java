@@ -11,7 +11,7 @@ public class Syema3a
       
       System.out.println("Please enter your sales amount: ");
       
-      double sales_amount = input.nextInt();
+      double sales_amount = input.nextDouble();
       
       if(sales_amount >= 1000 && sales_amount <= 5000){
          commission = (3 * sales_amount) / 100;

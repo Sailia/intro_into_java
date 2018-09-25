@@ -20,29 +20,75 @@ public class Syema3c
       System.out.println("Please enter an integer: ");
       num3 = input.nextInt();
       
+      
+      if(num1 >= num2 && num1 >= num3)//num1 is the largest
+      {
+         largest_num = num1;
+         if(num2 >= num3)
+         {
+            middle_num = num2;
+            smallest_num = num3;
+         }
+         else
+         {
+            middle_num = num3;
+            smallest_num = num2;
+         }
+      }
+      
+      if(num2 >= num1 && num2 >= num3)
+      {
+         largest_num = num2;
+         if(num1 >= num3)
+         {
+            middle_num = num1;
+            smallest_num = num3;
+         }
+         else
+         {
+            middle_num = num3;
+            smallest_num = num1;
+         }
+      }
+      
+      if(num3 >= num1 && num3 >= num2)
+      {
+         largest_num = num3;
+         if(num1 >= num2)
+         {
+            middle_num = num1;
+            smallest_num = num2;
+         }
+         else
+         {
+            middle_num = num2;
+            smallest_num = num1;
+         }
+      }
+      
       /*
       pick a number 
       pick another number
       check which one is lower
       */
-      if(num1 >= num2){
-         smallest_num = num2;
-         middle_num = num1;
-         if(num1 >= num3){
-            largest_num = num1;
-         }
-
-      }
-      
-      if(num1 <= num2)
-      {
-         smallest_num = num1;
-         middle_num = num2;
-         if(num2 <= num3)
-         {
-            largest_num = num3;
-         }
-      }
+//       if(num1 >= num2){
+//          smallest_num = num2;
+//          middle_num = num1;
+//          if(num1 >= num3){
+//             largest_num = num1;
+//          }
+// 
+//       }
+//       
+//       if(num1 <= num2)
+//       {
+//          smallest_num = num1;
+//          middle_num = num2;
+//          if(num2 <= num3)
+//          {
+//             largest_num = num3;
+//          }
+//       }
       /*
       check the next number
       check if the next number is lower than the kept number
