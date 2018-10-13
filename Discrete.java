@@ -6,11 +6,11 @@ public class Discrete
       int exp = 1;
       int i = 0;
       int j = 0;
-      hope(total, exp, i, j);
+      hope(total, exp, j, i);
       
    }
    
-   public static void hope(int total, int exp, int i, int j)
+   public static void hope(int total, int exp, int j, int i)
    {
       int stop = 4;
       if( i<=stop )
@@ -26,18 +26,18 @@ public class Discrete
             if(j==1)
             {
                exp=2;
-               result(total, exp,j, i);
+               result(total, exp, j, i);
             }
             else if(j<=stop)
             {
                exp = exp*2;
                j++;
-               result(total, exp,j, i);
+               result(total, exp, j, i);
             }
             else
             {
                j++;
-               result(total, exp,j, i);
+               result(total, exp, j, i);
             }
          }
       }
@@ -51,7 +51,7 @@ public class Discrete
    {
       total = total*(exp + 3);
       i++;
-      hope(total, exp, i, j);
+      hope(total, exp, j, i);
    }
 
 }
