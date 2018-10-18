@@ -6,7 +6,7 @@ public class October18
       while( count <= 12 )
       {
          System.out.println( count );
-         count = count + 2;
+         count = count + 1;
       }
    
    }
