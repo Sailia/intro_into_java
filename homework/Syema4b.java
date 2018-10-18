@@ -15,15 +15,12 @@ public class Syema4b
       
       System.out.println("The random numbers are: " + num1 + ", " + num2 + ", and " + num3); 
       
-      if(num1 > num2 && num1 > num3)
-      {
-         if(num2 > num3)
-         {
-            largest = num1;
-            middle = num2;
-            smallest = num3;
-         }
-      }
+      int largest = Math.max(Math.max(num1,num2),num3);
+      int smallest = Math.min(Math.min(num1,num2),num3);
+      int middle = (num1 + num2 + num3) - (largest + smallest);
+      
+      System.out.println("The middle value is " + middle);
+      
       
    }
 

@@ -4,9 +4,9 @@ public class Loops
    {
       int count = 1; //1) Count/control variable 
       
-      while(count <= 100)//2) Continuation condition 
+      while(count <= 10)//2) Continuation condition 
       {
-         System.out.println("Java is fun");
+         System.out.println(count);
          count++;//3) update count/control variable 
       }
    }

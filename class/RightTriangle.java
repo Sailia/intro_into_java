@@ -30,7 +30,16 @@ public class RightTriangle
       
       public static void rightTriangle(double a, double b, double c)
       {
-         double largest = Math.max(a,b);
+         double largest = Math.max(Math.max(a,b), c);
+         
+         double minimum = Math.min( Math.min(a,b), c );
+         double sum = a  + b +c;
+         double middle = sum - largest - smallest;
+         
+         double largestRoot = Math.sqrt(largest);
+         
+         
+         
          double next_largest = Math.max(largest,c);
          double smallest = Math.min(a,b);
          double next_smallest = Math.min(smallest,c);
