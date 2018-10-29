@@ -6,7 +6,7 @@ public class Syema5c
    {
       int rand1 = randomNumber();
       int rand2 = randomNumber();
-      int product = rand1 * rand2;
+      int product = rand1 * rand2; //or (int) Math.pow(rand1, rand2) lol 
       int response;
       Scanner input = new Scanner(System.in);
       
