@@ -37,14 +37,16 @@ public class GuessNumberOneTime
       if(guess < number)
       {
          System.out.println("Too low!");
-         guess = getInput();
+         return false;
       }
       else if(guess > number)
       {
          System.out.println("Too high!");
-         guess = getInput();
-      }  
-      return true;
+         return false;
+      }
+      else{  
+         return true;
+      }
    }
    
    public static void result(int number)
