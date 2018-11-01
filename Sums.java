@@ -6,8 +6,8 @@ public class Sums
    {
       //controller 
       int num1 = userInput();
-      
-      int sum = addSum(userInput(), num);
+      int num2 = userInput();
+      int sum = addSum(num1, num2);
       boolean check = (checkSum(sum, num1));
       int counter = 0;
       
