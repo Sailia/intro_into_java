@@ -2,7 +2,7 @@ public class Syema6b {
    public static void main( String[] args ) {
       int[] arr = {1, 2, 3, 4, 3, 3, 3, 5};
       int b = 3;
-      System.out.print(newSmallerArray( arr, b ));   
+      SnewSmallerArray( arr, b );   
    }
    
    public static int changeSecondArrayLength( int[] array, int num ) {
@@ -21,8 +21,9 @@ public class Syema6b {
       int[] secondArray = new int[A.length];
       
       for(int index = 0; index < A.length; index++) {
-         //if the element is not matching the number b 
-         if(A[index] != b) {
+         //if the element in the array is not matching the number b 
+         if(A[index] != b) 
+            //get the index from array A and set that element to the same index in secondArray 
             secondArray[index] = A[index]; 
          }
       }
