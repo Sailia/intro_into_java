@@ -1,24 +1,30 @@
 public class ZeroFront  {
    public static void main(String[] args) {
-      int[] arr = {1,0,0,1};
+      int[] arr = {1,0,1,0,1};
       int[] newArray = zeroFront(arr);
-      for(int index = 0; index < newArray.length; index++) {
-         System.out.println(newArray[index]);
+      
+      for(int index = 0; index < arr.length; index++)  {
+         System.out.print(newArray[index] + " ");
       }
    }
    
    public static int[] zeroFront( int[] arr )   {
-      int[] arrayTwo = new int[arr.length];
-      for( int index = 0; index < arr.length; index++ )  {
-         if(arr[index] != arr[-1])   {
-            if(arr[index] > arr[index + 1])   {
-               arrayTwo[index] = arr[index + 1];
-            }
-            else  {
-               arrayTwo[index] = arr[index];
-            }
+      int[] array2 = new int[arr.length];
+      int j = 0;
+      
+      for(int index = 0; index < arr.length; index++) {
+         if(arr[index] == 0)  {
+            array2[j] = arr[index];
+            j++;
+         }  
+      }
+      
+      for(int index = 0; index < arr.length; index++)  {
+         if(arr[index] != 0)  {
+            array2[j] = arr[index];
+            j++;
          }
       }
-      return arr;
+      return array2;
    }
 }
