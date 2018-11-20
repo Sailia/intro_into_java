@@ -3,6 +3,22 @@ public class November20 {
       int[][] table = new int[3][3];
       
       print2DArray(table);
+      System.out.println();
+      
+      addNumbers(table);
+      
+      print2DArray(table);
+   }
+   
+   public static void addNumbers( int[][] array )  {
+      int count = 1;
+      for(int row = 0; row < array.length; row++)  {
+         //tells us how many rows there are for each column 
+         for(int col = 0; col < array[row].length; col++)   {
+            array[row][col] = count;
+            count++;
+         }
+      }
    }
    
    public static void print2DArray(int[][] array)  {
