@@ -1,6 +1,8 @@
 public class November20 {
    public static void main(String[] args) {
       int[][] table = new int[3][3];
+      
+      print2DArray(table);
    }
    
    public static void print2DArray(int[][] array)  {
