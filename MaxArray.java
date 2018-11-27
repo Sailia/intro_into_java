@@ -1,6 +1,10 @@
 public class MaxArray {
    public static void main(String[] args) {
-      
+      int[][] twoDArray = { {2,3,5,6},
+                            {3,4,7,9},
+                            {2,5,8,9}
+                          };
+      System.out.print(sumArray(twoDArray));
    }
    
    public static int sumArray(int[][] myArray)  {
@@ -12,6 +16,6 @@ public class MaxArray {
             }
          }
       }
-      System.out.print(max);
+      return max;
    }
 }
