@@ -1,6 +1,11 @@
 public class DiagonalSumArray {
    public static void main(String[] args) {
-      
+      int[][] array = { {3,6,13,9},
+                  {5,29,30,25},
+                  {21,25,12,19},
+                  {31,25,15,14}
+                };
+      System.out.print(sumArray(array));
    }
    
    public static int sumArray(int[][] myArray)  {
