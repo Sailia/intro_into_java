@@ -1,4 +1,4 @@
-public class Syema8d {
+public class Syema7d {
    public static void main(String[] args) {
       boolean[][] aa = {{false, false, false},
                         {false, true, false},
