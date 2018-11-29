@@ -16,22 +16,22 @@ public class Syema8d {
    }
    
    public static int largestIndexedHappyRow( boolean[][] table )  {
-      int happy;
-      int index = -1;
+      int trues;
+      int m = -1;
       
       for(int row = 0; row < table.length; row++)  {
-      happy = 0;
+      trues = 0;
          for(int col = 0; col < table[row].length; col++)   {
             if(table[row][col] == true)   {
-               happy++;
+               trues++;
             }
          }
-         if(happy == row)  {
-            if(happy > index) {
-               index = happy;
+         if(trues == row)  {
+            if(trues > m) {
+               m = trues;
             }
          }
       }
-      return index;
+      return m;
    }
 }
