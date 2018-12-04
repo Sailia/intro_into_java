@@ -17,6 +17,8 @@ public class IndexOfFirstPairReview  {
             return index;
          }
       }
+      
+      if(array[index] 
       return index;
    }
 }
