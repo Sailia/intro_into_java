@@ -16,7 +16,7 @@ public class IndexOfHighestRow   {
          newSum = 0;
          for(int inner = 0; inner < A[outer].length; inner++)  {
             newSum += A[outer][inner];
-         }
+         }        
          if(newSum > sum) {
             sum = newSum;
          }
