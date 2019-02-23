@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class SpringMid  {
-   public static void main(String[] args) {
+   public static void main(String[] args) { 
       Scanner input = new Scanner(System.in);
       double num1, num2, num3;
       System.out.print("Enter a: ");
