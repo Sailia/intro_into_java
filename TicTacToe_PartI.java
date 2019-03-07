@@ -5,13 +5,13 @@ public class TicTacToe_PartI  {
    }
    
    public static char identifyPlayer(int n)  {
-      char evenOrOdd;
+      char xO;
       if (n % 2 == 0)   {
-         evenOrOdd = 'X';
+         xO = 'X';
       } else   {
-         evenOrOdd = 'O';
+         xO = 'O';
       }
-      return evenOrOdd;
+      return xO;
    }
    
    public static int getRow(int n)  {
@@ -20,8 +20,21 @@ public class TicTacToe_PartI  {
          row = 0;
       } else if (n >= 4 && n <= 6)  {
          row = 1;
-      } else if (n >= 7 && n <= 9)  {
+      } else {
          row = 2;
       }
+      return row;
+   }
+   
+   public static int getColumn(int n)  {
+      int col;
+      if (n >= 1 && n <= 3)   {
+         col = 0;
+      } else if (n >= 4 && n <= 6)  {
+         col = 1;
+      } else {
+         col = 2;
+      }
+      return col;
    }
 }
