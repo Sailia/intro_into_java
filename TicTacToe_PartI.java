@@ -1,40 +1,65 @@
+import java.util.Scanner;
+
 public class TicTacToe_PartI  {
    public static void main(String[] args) {
-      System.out.println(identifyPlayer(2));
-      System.out.println(identifyPlayer(5));
+      System.out.println(getUserInput('X'));
    }
    
    public static char identifyPlayer(int n)  {
-      char xO;
-      if (n % 2 == 0)   {
-         xO = 'X';
-      } else   {
-         xO = 'O';
+      char evenOrOdd;
+      if(n % 2 == 0) {
+         evenOrOdd = 'X';
+      } else {
+         evenOrOdd = 'O';
       }
-      return xO;
+      return evenOrOdd;
+   }
+   
+   public static void promptPlayerSquare(char p)   {
+      if(p == 'X')   {
+         System.out.print("X - Which square [1 - 9]: ");
+      } else   {
+         System.out.print("O - Which square [1 - 9]: ");
+      }
+   }
+   
+   public static int getUserInput(char p) {
+      Scanner input = new Scanner(System.in);
+      int n = 0;
+      boolean incorrectInput = true;
+      
+      while (incorrectInput)  {
+         promptPlayerSquare(p);
+         n = input.nextInt();
+         if (n > 0 && n <= 9) {
+            incorrectInput = false;
+         }
+      }
+      return n;
    }
    
    public static int getRow(int n)  {
       int row;
-      if (n >= 1 && n <= 3)   {
+      if(n > 0 && n <= 3)  {
          row = 0;
-      } else if (n >= 4 && n <= 6)  {
+      } else if (n > 3 && n <= 6)   {
          row = 1;
-      } else {
-         row = 2;
+      } else if (n > 6 && n <= 9)   {
+         row = 3;
       }
       return row;
    }
    
    public static int getColumn(int n)  {
       int col;
-      if (n >= 1 && n <= 3)   {
+      if(n > 0 && n <= 3)  {
          col = 0;
-      } else if (n >= 4 && n <= 6)  {
+      } else if (n > 3 && n <= 6)   {
          col = 1;
-      } else {
-         col = 2;
+      } else if (n > 6 && n <= 9)   {
+         col = 3;
       }
       return col;
    }
+   
 }
