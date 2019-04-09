@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class TicTacToe_PartII {
    public static void main(String[] args) {
-      int i = 0;
+      int i = 1;
       char player = identifyPlayer(i);
       int square = getUserInput(player);
       int row = getRow(square);
@@ -18,6 +18,14 @@ public class TicTacToe_PartII {
       }
       return evenOrOdd;
    } 
+   
+   public static void promptPlayerSquare(char p)   {
+      if(p == 'X')   {
+         System.out.print("X - Which square [1 - 9]: ");
+      } else   {
+         System.out.print("O - Which square [1 - 9]: ");
+      }
+   }
    
    public static int getRow(int n)  {
       int row;
@@ -41,14 +49,6 @@ public class TicTacToe_PartII {
          col = 3;
       }
       return col;
-   }
-   
-   public static void promptPlayerSquare(char p)   {
-      if(p == 'X')   {
-         System.out.print("X - Which square [1 - 9]: ");
-      } else   {
-         System.out.print("O - Which square [1 - 9]: ");
-      }
    }
    
    public static int getUserInput(char p) {
