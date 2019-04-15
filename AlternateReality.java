@@ -1,8 +1,10 @@
  public class AlternateReality {
    public static void main(String[] args) {
       char[] c1 = alternatingArray('a', 'b', 4);
-      for(int i = 0; i < c1.length; i++)  {      
-         System.out.print(c1[i] + " ");
+      char[] c2= alternatingArray('y', 'x', 3);
+      char[] c3= alternatingArray('s', 'o', 1);
+      for(int i = 0; i < c3.length; i++)  {      
+         System.out.print(c3[i] + " ");
       }
    }
    
