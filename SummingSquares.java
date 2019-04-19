@@ -6,7 +6,7 @@ public class SummingSquares   {
    
    public static boolean isSquareSum(int c)  {
       boolean isSquare = false;
-      int a = 1, b = 2;
+      int a = 1, b = 1;
       
       while((a < c && b < c)) {
          if((Math.sqrt(a) + Math.sqrt(b) == c))  {
