@@ -6,15 +6,23 @@ public class SummingSquares   {
    
    public static boolean isSquareSum(int c)  {
       boolean isSquare = false;
+      boolean bSquared = false;
       int a = 1, b = 1;
       
-      while((a < c && b < c)) {
-         if((Math.sqrt(a) + Math.sqrt(b) == c))  {
-            isSquare = true;
-         }
+      while((a*a) <= (c-1)) {
          a++;
+      }
+      
+      int cMinusASquared = c - (a*a);
+      
+      while(((a*a) + (b*b) != c) || b < cMinusASquared)  {
          b++;
-      } 
+      }
+      
+      if((a*a) + (b*b) == c)  {
+         isSquare = true;
+      }
+      
       return isSquare;
    }
 }
