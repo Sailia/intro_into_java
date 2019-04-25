@@ -14,8 +14,7 @@ public class AnotherResetNumber  {
       for(int i = 1; i <= n; i++)   {
          count = input.nextInt();
          if(i != count) {
-            System.out.println(count + " " + i);
-            System.out.println("Not in order, start over." + i + " " + startOver);
+            System.out.println("Not in order, start over.");
             i = 0;
             startOver++;
          }
