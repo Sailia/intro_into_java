@@ -2,9 +2,10 @@ import java.util.Scanner;
 
 public class TicTacToe_PartIII  {
    public static void main(String[] args) {
-      char[][] arr = {{'1','2','3'},
+      char[][] board = {{'1','2','3'},
                       {'4','5','6'},
                       {'7','8','9'}};
+      displayBoard(board);
       
 
    }
@@ -102,5 +103,44 @@ public class TicTacToe_PartIII  {
             System.out.println("   |   |   ");         
          }
       }
-   }
+      
+      public static boolean isWinner(int[][] board, char p) {
+         boolean winner = false;
+         
+         if(board[0][0] == p && board[0][1] == p && board[0][2] == p)   {
+            winner = true;
+         }  else if(board[1][0] == p && board[1][1] == p && board[1][2] == p)  {
+            winner = true;
+         }  else if(board[2][0] == p && board[2][1] == p && board[2][2] == p)  {
+            winner = true;
+         }  else  {
+            for(int i = 0; i < board.length; i++)  {
+               for(int j = 0; j < board[0].length; j++)  {
+                  if(i == j && board[i][j] == p)   {
+                     winner = true;
+                  } else if(i + j == 2 && board[i][j] == p)   {
+                     winner = true;
+                  }
+               }
+            }
+         }
+         return winner;
+      }
+      
+      public static boolean isTie(int[][] board)   {
+         boolean tie = false;
+         int count = 0;
+         for(int i = 0; i < board.length; i++)  {
+            for(int j = 0; j < board[0].length; j++)  {
+               if(board[i][j] == 'X' || board[i][j] == 'O') {
+                  count++;
+               }
+            }
+         }
+         if(count == 9) {
+            tie = true;
+         }
+         return tie;
+      }
+   }  
 }
